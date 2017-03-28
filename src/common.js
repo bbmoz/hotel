@@ -1,5 +1,5 @@
 const path = require('path')
-const homedir = require('os').homedir()
+const homedir = process.env.HOTEL_DIR || require('os').homedir()
 
 const hotelDir = path.join(homedir, '.hotel')
 

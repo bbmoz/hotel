@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   target: 'web',
   entry: [
@@ -6,7 +8,7 @@ module.exports = {
     './src/front/index.js'
   ],
   output: {
-    path: 'dist',
+    path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   module: {
